@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css"
+    href="https://unpkg.com/open-props/gradients.min.css"
+  </head>
+  <body>
+    <div class="background-circle"></div>
+    <div class="grid-container">
+      <h2>JDBC Application Configuration</h2>
+
+      <form>
+        <fieldset class="grid-card">
+          <label for="appName" class="required">Application Name </label>
+          <input type="text" id="appName" required />
+
+          <label for="appDescription" class="required">Description </label>
+          <input type="text" id="appDescription" required />
+        </fieldset>
+
+        <fieldset class="grid-card">
+          <label for="dbType" class="required">Database Vendor/Type</label>
+          <select id="dbType" required>
+            <option id="Oracle" value="Oracle">Oracle SQL</option>
+            <option id="Oracle" value="Oracle">Microsoft SQL</option>
+            <option id="Oracle" value="Oracle">MySQL</option>
+          </select>
+
+          <label for="jdbcURL" class="required">JDBC URL</label>
+          <input type="text" id="jdbcURL" name="jdbcURL" required />
+
+          <label for="jdbcUsername" class="required">Username</label>
+          <input type="text" id="jdbcUsername" name="jdbcUsername" required />
+
+          <label for="jdbcPassword" class="required">Password</label>
+          <input type="text" id="jdbcPassword" name="jdbcPassword" required />
+
+          <label for="testConnect" class="required">Test Connection SQL</label>
+          <input type="text" id="testConnect" name="testConnect" required />
+        </fieldset>
+
+        <fieldset class="grid-card">
+          <label for="accImport" class="required">Account Import</label>
+          <input type="text" id="accImport" name="accImport" required />
+
+          <label for="singleAccSQL" class="required"
+            >Single Account Query</label
+          >
+          <input type="text" id="singleAccSQL" name="singleAccSQL" />
+
+          <label for="accessImport" class="required">Access Import</label>
+          <input type="text" id="accessImport" name="accImport" />
+
+          <label for="singleAccessSQL" class="required">
+            Single Access Query
+          </label>
+          <input type="text" id="singleAccessSQL" name="singleAccessSQL" />
+        </fieldset>
+
+        <fieldset class="grid-card">
+          <label for="createAccount" class="required">Create Account</label>
+          <textarea id="createAccount" name="createAccount"> </textarea>
+
+          <label for="addAccess" class="required">Add Access</label>
+          <textarea id="addAccess" name="addAccess"></textarea>
+
+          <label for="removeAccess" class="required">Remove Access</label>
+          <textarea id="removeAccess" name="removeAccess"></textarea>
+
+          <label for="updateAccount" class="required">Update Account</label>
+          <textarea id="updateAccount" name="updateAccount"></textarea>
+
+          <label for="enableAccount" class="required">Enable Account</label>
+          <textarea id="enableAccount" name="enableAccount"></textarea>
+
+          <label for="disableAccount" class="required">Disable Account</label>
+          <textarea id="disableAccount" name="disableAccount"></textarea>
+
+          <label for="deleteAccount" class="required">Delete Account</label>
+          <textarea id="deleteAccount" name="deleteAccount"></textarea>
+        </fieldset>
+        <input type="submit" />
+      </form>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>
